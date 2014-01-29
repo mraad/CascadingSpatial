@@ -71,6 +71,6 @@ Save the output to a local file
 $ hadoop fs -cat output/part* > density.csv
 ```
 
-In [ArcGIS for Desktop](http://www.esri.com/software/arcgis/arcgis-for-desktop), add the ```density.csv``` as table as using join it to the ```hexalbers``` layer for symbolization on the ```POPULATION``` field.
+In [ArcGIS for Desktop](http://www.esri.com/software/arcgis/arcgis-for-desktop), add the ```density.csv``` as table, and join it with the ```hexalbers``` layer for symbolization on the ```POPULATION``` field.
 
 ![CascadingJoin](https://dl.dropboxusercontent.com/u/2193160/CascadingJoin.png "CascadingJoin")
