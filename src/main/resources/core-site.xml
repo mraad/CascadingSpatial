@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <property>
+        <name>fs.default.name</name>
+        <value>hdfs://${hadoop.host}:8020</value>
+    </property>
+    <property>
+        <name>fs.defaultFS</name>
+        <value>hdfs://${hadoop.host}:8020</value>
+    </property>
+    <property>
+        <name>mapred.job.tracker</name>
+        <value>${hadoop.host}:8021</value>
+    </property>
+    <!--
+    <property>
+        <name>dfs.replication</name>
+        <value>${dfs.replication}</value>
+    </property>
+    -->
+    <property>
+        <name>mapreduce.map.output.compress</name>
+        <value>true</value>
+    </property>
+    <property>
+        <name>mapreduce.map.output.compress.codec</name>
+        <value>org.apache.hadoop.io.compress.GzipCodec</value>
+    </property>
+</configuration>
